@@ -21,7 +21,7 @@ export default function Gmate ({
     
     useEffect (()=>{
         setSeq (sekuen[index])
-    }, [index, setSeq])
+    }, [index, setSeq, sekuen])
 
     function next (e) {
         if (index == 44) setIndex (0)

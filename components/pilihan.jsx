@@ -18,7 +18,7 @@ export default function Pilihan ({soal}){
             listStyleType: "upper-alpha"
         }}>
             {daftar.sort( () => Math.random() -0.5 ).map(d => (
-                <li seq={d.seq}>
+                <li key= {d.seq} seq={d.seq}>
                 <div dangerouslySetInnerHTML={{__html: d.text}}/>
                 </li>
             ))}
